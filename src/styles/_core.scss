@@ -5,14 +5,11 @@ html {
 }
 
 body {
-  background-color: $css-color-white;
-  color: $css-color-katana;
   font-family: sans-serif;
   font-size: $css-global-font-size;
 }
 
 main {
-  background-color: $css-color-screen;
   margin: 40px;
   min-height: calc(100vh - 80px);
   padding: 40px;
@@ -28,8 +25,15 @@ a {
 
   &:hover,
   &:focus {
-    background-color: $css-color-turquoise--darkest;
-    color: $css-color-white;
+    color: $css-color-turquoise--light;
+
+    .css-icon {
+      fill: $css-color-turquoise--light;
+    }
+  }
+
+  .css-icon {
+    fill: $css-color-turquoise--darker;
   }
 }
 
@@ -58,4 +62,10 @@ ul {
       margin-bottom: 0;
     }
   }
+}
+
+.css-icon {
+  fill: $css-color-black;
+  height: 14px;
+  width: 14px;
 }
