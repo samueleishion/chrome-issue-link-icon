@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
-  <title>Built with create-static-site</title>
+  <title>{{ title }}</title>
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="title" content="Built with create-static-site" />
+  <meta name="title" content="{{ title }}" />
   <meta name="keywords" content="" />
-  <meta name="description" content="" />
+  <meta name="description" content="{{ description }}" />
   <meta property="fb:admins" content="" />
   <meta property="og:title" content="" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="{{ description }}" />
   <meta property="og:image" content="" />
   <meta property="og:site_name" content="" />
   <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico" />
@@ -23,18 +23,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1 id="hello-world">hello world.</h1>
-<p>welcome to your piece of the internet. <br />
-this is your sandbox.</p>
-<ul>
-<li><a href="#">🐢 Let&#39;s start slow.</a><p>Start with a general overview.</p></li>
-<li><a href="#">🛠 Show me how it&#39;s done.</a><p>Dive right into the content with this guide.</p></li>
-<li><a href="#">💅 Make it sassy.</a><p>Start building SASS modules.</p></li>
-<li><a href="#">💪 Harder. Better. Faster. Stronger.</a><p>Customize it and make it more robust by adding anything from custom scripts to automation and generators.</p></li>
-<li><a href="#">🚀 Ship it.</a><p>Playing in the sandbox is cool, but here's how to put your stuff in the wild.</p>
-</li>
-</ul>
-
+        {{{ contents }}}
       </div>
     </div>
   </div>
